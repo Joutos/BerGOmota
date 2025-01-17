@@ -4,11 +4,9 @@ import (
 	"time"
 )
 
-type User struct {
+type Ponto struct {
 	ID        uint `gorm:"primaryKey"`
-	Name      string
-	Email     string `gorm:"unique"`
-	Password  string
+	IdUsuario string
 	CreatedAt time.Time
 	UpdatedAt time.Time
 }
